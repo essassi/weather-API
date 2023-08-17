@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-content" id="card-content">
+            <div class="form">
+                <input type="text" placeholder="Search City" id="city" class="city">
+                <datalist id="match-list"></datalist>
+
+                <button id="search-city"><i class="material-icons">search</i></button>
+
+            </div>
+            <div class="location" id="location">
+                <button id="current-location" class="current-location">Get Weather for Current Location</button>
+            </div>
+            <span id="span"></span>
+            <div class="location">
+                <h1 class="city-name" id="city-name"></h1>
+                <h1 class="temperature" id="temperature"></h1>
+            </div>
+            <div class="clouds">
+                <img id="cloud-img" src="images/clouds.png" alt="" class="icon">
+                <p id="cloud" class="cloud"></p>
+            </div>
+            <div class="hum" id="hum">
+                <img src="images/humidity.png" alt="" class="icon">
+                <p class="humidity" id="humidity">Humidity</p>
+            </div>
+            <div class="win" id="win">
+                <img src="images/wind.png" alt="" class="icon">
+                <p class="wind" id="wind">Wind</p>
+            </div>
+            <div id="loading" class="loading-container">
+                <div class="loading-spinner"></div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
